@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title> Restaurant Website </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+	<link rel="stylesheet" href="Restaurant.css">
+</head>
+<body>
+	<!-- Header / Navbar -->
+	<header>
+		<nav class="navbar section-content">
+			<a href="#" class="nav-logo">
+				<h2 class="logo-text"> Gilded Spoon</h2>
+			</a>
+			<ul class="nav-menu">
+				<button id="menu-close-button" class="fas fa-times"></button>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Home</a>
+				</li>
+				<li class="nav-item">
+					<a href="#booking" class="nav-link">Booking</a>
+				</li>
+				<li class="nav-item">
+					<a href="#menu" class="nav-link">Menu</a>
+				</li>
+				<li class="nav-item">
+					<a href="#gallery" class="nav-link">Gallery</a>
+				</li>
+				<li class="nav-item">
+					<a href="#testimonials" class="nav-link">Testimonials</a>
+				</li>
+				<li class="nav-item">
+					<a href="#about" class="nav-link">About</a>
+				</li>
+				<li class="nav-item">
+					<a href="#contact" class="nav-link">Contact</a>
+				</li>
+			</ul>
+			<button id="menu-open-button" class="fas fa-bars"></button>
+		</nav>
+	</header>
+
+	<main>
+		<!-- Hero Section -->
+		<section class="hero-section" id="home">
+		 <div class="section-content">
+			<div class="hero-details">
+				<h2 class="title"> Gilded Spoon</h2>
+				<h3 class="subtitle">An elevated dining experience, crafted with passion and precision!</h3>
+				<p class="description">Namaste and welcome-experience the rich taste of tradition and hospitality.</p>
+
+				<div class="buttons">
+					<a href="#" class="btn book-table">Book Table</a>
+					<a href="#" class="btn contact-us">Contact Us</a>
+				</div>
+
+	        </div>
+			<div class="hero-image-wrapper">
+				<img src="main place.jpg" alt="Restaurant Door" class="hero-image">
+			</div>
+		 </div>
+		</section>
+
+		<!-- Booking Section -->
+		 <section class="booking-section" id="booking">
+			<div class="booking-content">
+				<div class="card-content">
+					<h3>Reservation</h3>
+					<form>
+						<div class="form-row">
+							<select name="days">
+								<option value="day-select">Select Day</option>
+								<option value="monday">Monday</option>
+								<option value="tuesday">Tuesday</option>
+								<option value="wednesday">Wednesday</option>
+								<option value="thursday">Thursday</option>
+								<option value="friday">Friday</option>
+								<option value="saturday">Saturday</option>
+								<option value="sunday">Sunday</option>
+							</select>
+
+							<select name="hours">
+								<option value="hour-select">Select Hour</option>
+								<option value="10">10:00 </option>
+								<option value="12">12:00 </option>
+								<option value="14">14:00 </option>
+								<option value="16">16:00 </option>
+								<option value="18">18:00 </option>
+								<option value="20">20:00 </option>
+								<option value="22">22:00 </option>
+							</select>
+
+							<select name="minutes">
+								<option value="minute-select">Select Minute</option>
+								<option value="00">00</option>
+								<option value="15">15</option>
+								<option value="30">30</option>
+								<option value="45">45</option>
+							</select>
+						</div>
+
+						<div class="form-row">
+							<input type="text"  placeholder="Full Name">
+							<input type="text"  placeholder="Phone Number">
+						</div>
+
+						<div class="form-row">
+							<input type="email"  placeholder="Email">
+						</div>
+
+						<div class="form-row">
+							<select value="Sitting">
+								<option value="sitting-select">Select Sitting</option>
+						    <option value="2">Table for 2</option>
+							<option value="2">Table for 4</option>
+							<option value="3">Table for 6</option>
+							<option value="4">Table for 8</option>
+							<option value="5">Private Room for 2</option>
+							<option value="6">Private Room for 4</option>
+							<option value="7">Private Room for Meeting</option>
+							<option value="8">Balcony Area for 2</option>
+							<option value="9">Balcony Area for 4</option>
+							<option value="Hall">Party Hall</option>
+							</select>
+							</div>
+
+						<div class="form-row">
+							<input type="submit"  placeholder="Book Table">
+						</div>
+					</form>
+				   </div>
+			</div>
+		 </section>
+
+		 <!--Menu Section-->
+		 <section class="menu-section" id="menu">
+			<h2 class="section-title">Our Menu</h2>
+			
+			<div class="card-container">
+				<div class="card">
+					<img src="appetizer.jpg" alt="Appetizer" class="menu-image">
+					<div class="card-content">
+						<h3 class="name">Appetizer</h3>
+						<p class="text">Small Bites, Big Flavors – Perfect for Sharing or Savoring Solo.</p>
+					</div>
+				</div>
+
+				<div class="card">
+					<img src="main course.webp" alt="Main-Course" class="menu-image">
+					<div class="card-content">
+						<h3 class="name">Main-Course</h3>
+						<p class="text">Main Courses That Make Every Bite Worth It.</p>
+					</div>
+				</div>
+
+				<div class="card">
+					<img src="Side food.jpg" alt="Side dishes" class="menu-image">
+					<div class="card-content">
+						<h3 class="name">Side Dish</h3>
+						<p class="text">Every Great Dish Deserves a Great Side – Choose Yours.</p>
+					</div>
+				</div>
+
+				<div class="card">
+					<img src="dessert-tray.webp" alt="dessert" class="menu-image">
+					<div class="card-content">
+						<h3 class="name">Desserts</h3>
+						<p class="text">Where Sweet Dreams Come True – Dive into Dessert.</p>
+					</div>
+				</div>
+
+				<div class="card">
+					<img src="hot drinks.webp" alt="hot-drinks" class="menu-image">
+					<div class="card-content">
+						<h3 class="name">Hot Beverage</h3>
+						<p class="text">Steamy, Soothing, Satisfying – Discover Our Hot Drinks.</p>
+					</div>
+				</div>
+
+				<div class="card">
+					<img src="drinks.jpg" alt="cold drinks" class="menu-image">
+					<div class="card-content">
+						<h3 class="name">Cold Beverage</h3>
+						<p class="text">Icy, Crisp, and Oh-So-Satisfying – Your Cold Drink Fix.</p>
+					</div>
+				</div>
+				
+					
+			</div>
+		 </section>
+
+		<!--Gallery Section-->	
+		<section class="gallery-section" id="gallery">
+			<h2 class="section-title">Gallery</h2>
+			<div class="section-content">
+				<ul class="gallery-list">
+					<li class="gallery-item">
+						<img src="restaurant entrance image with name gilded spoon.jpg" alt="Gallery" class="gallery-image">
+					</li>
+					<li class="gallery-item">
+						<img src="restaurant lobby image.jpg" alt="Gallery" class="gallery-image">
+					</li>
+					<li class="gallery-item">
+						<img src="bar area.jpg" alt="Gallery" class="gallery-image">
+					</li>
+					<li class="gallery-item">
+						<img src="table4.jpg" alt="Gallery" class="gallery-image">
+					</li>
+					<li class="gallery-item">
+						<img src="Restaurant dining area.jpg" alt="Gallery" class="gallery-image">
+					</li>
+					<li class="gallery-item">
+						<img src="family hall.jpg" alt="Gallery" class="gallery-image">
+					</li>
+					<li class="gallery-item">
+						<img src="private.jpg" alt="Gallery" class="gallery-image">
+					</li>
+					<li class="gallery-item">
+						<img src="private meeting.jpg" alt="Gallery" class="gallery-image">
+					</li>
+					<li class="gallery-item">
+						<img src="party hall.jpg" alt="Gallery" class="gallery-image">
+					</li>
+					<li class="gallery-item">
+						<img src="balcony.png" alt="Gallery" class="gallery-image">
+					</li>
+					<li class="gallery-item">
+						<img src="balcony2.jpg" alt="Gallery" class="gallery-image">
+					</li>
+					<li class="gallery-item">
+						<img src="roof.png" alt="Gallery" class="gallery-image">
+					</li>
+				</ul>
+			</div>
+		 </section>
+
+        <!--Testimonials Section-->
+		 <section class="testimonials-section" id="testimonials">
+			<h2 class="section-title">Testimonials</h2>
+			<div class="section-content">
+				<div class="slider-container swiper">
+					<div class="slider-wrapper ">
+						<ul class="testimonials-list swiper-wrapper">
+							<li class="testimonial swiper-slide">
+								<img src="user1.png" alt="User" class="user-image">
+								<h3 class="name">Rose Lockwood</h3>
+								<i class="feedback">"Loved the side-dishes. Perfectly balanced and rich. Will come soon again!" </i>
+							</li>
+							<li class="testimonial swiper-slide">
+								<img src="user2.jpeg" alt="User" class="user-image">
+								<h3 class="name">Sarah Johnson</h3>
+								<i class="feedback">"Great espresso blend! Smooth and bold flavor." </i>
+							</li>
+							<li class="testimonial swiper-slide">
+								<img src="user3.jpg" alt="User" class="user-image">
+								<h3 class="name">Tyler Smith</h3>
+								<i class="feedback">"Fantastic Indian cuisine with Western touch!" </i>
+							</li>
+							<li class="testimonial swiper-slide">
+								<img src="user4.jpg" alt="User" class="user-image">
+								<h3 class="name">Isabelle William</h3>
+								<i class="feedback">"Appetizers are mind blowing! Can't get enough." </i>
+							</li>
+							<li class="testimonial swiper-slide">
+								<img src="user5.jpg" alt="User" class="user-image">
+								<h3 class="name">Itheraj</h3>
+								<i class="feedback">"Fantastic services and food!" </i>
+							</li>
+							<li class="testimonial swiper-slide">
+								<img src="user6.webp" alt="User" class="user-image">
+								<h3 class="name">Sejal Sharma</h3>
+								<i class="feedback">"Balcony area view is so beautiful and set the perfect mood for romantic dates..." </i>
+							</li>
+							<li class="testimonial swiper-slide">
+								<img src="user7.jpg" alt="User" class="user-image">
+								<h3 class="name">Priya</h3>
+								<i class="feedback">"Party hall could contain lot of people. Perfect for functions and parties." </i>
+							</li>
+							<li class="testimonial swiper-slide">
+								<img src="user8.jpg" alt="User" class="user-image">
+								<h3 class="name">Rohit Mehmi</h3>
+								<i class="feedback">"Bar area has great services! Drinks are fresh and aromatic and services are quick too." </i>
+							</li>
+						</ul>
+						<div class="swiper-pagination"></div>
+							<div class="swiper-slide-button swiper-button-prev"></div>
+							<div class="swiper-slide-button swiper-button-next"></div>
+					</div>
+				</div>
+			</div>
+			</section>
+
+		<!-- About Section -->
+		 <section class="about-section" id="about">
+			<div class="section-content">
+				<div class="about-image-wrapper">
+					<img src="about.jpg" alt="About " class="about-image">
+				</div>
+                       <div class="about-details">
+						<h2 class="section-title">About Us</h2>	
+						<p class="text">
+							Gilded Spoon is a vibrant culinary destination in Phagwara that celebrates the art of cooking and the joy of dining. Our restaurant is a fusion of modern elegance and traditional charm, offering a unique atmosphere for food enthusiasts. We take pride in sourcing the freshest ingredients and crafting dishes that tantalize the taste buds. Whether you're here for a casual meal or a special occasion, our dedicated team is committed to providing an unforgettable dining experience.
+						</p>
+						<div class="social-link-list">
+							<a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+							<a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+							<a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+						</div>
+					</div>
+			</div>
+			</section>
+
+			<!--Contact Section-->
+			<section class="contact-section" id="contact">
+				<h2 class="section-title">Contact Us</h2>
+				<div class="section-content">
+					<ul class="contact-info-list">
+						<li class="contact-info">
+							<i class="fa-solid fa-location-crosshairs"></i>
+							<p>Model Town, Phagwara</p>
+						</li>
+						<li class="contact-info">
+							<i class="fa-regular fa-envelope"></i>
+							<p>Info@gildedspoon.com</p>
+						</li>
+						<li class="contact-info">
+							<i class="fa-solid fa-phone"></i>
+							<p>+91 786-34562</p>
+						</li>
+						<li class="contact-info">
+							<i class="fa-regular fa-clock"></i>
+							<p>Monday - Friday: 10:00 AM - 12:00 PM</p>
+						</li>
+						<li class="contact-info">
+							<i class="fa-regular fa-clock"></i>
+							<p>Sunday - Closed</p>
+						</li>
+						<li class="contact-info">
+							<i class="fa-solid fa-globe"></i>
+							<p>www.gildedspoon.com</p>
+						</li>
+					</ul>
+					
+					  <div class="contact-form">
+						 <form>
+							<input type="text" placeholder="Full Name" class="form-input" required>
+							<input type="email" placeholder="Email" class="form-input" required>
+							<textarea placeholder="Message" class="form-input" required></textarea>
+							<div>
+							 <button class="submit-button">Submit</button>
+							</div>
+						  </form>
+					   </div>
+				</div>
+			</section>
+
+			<!-- Footer Section -->
+				<footer class="footer-section">
+				<div class="section-content">
+                   <p class="copyright-text">@ 2025 Restaurant</p>
+
+				   <div class="social-link-list">
+					<a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+					<a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+					<a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+				   </div>
+                  <p class="policy-text">
+					<a href="#" class="policy-link">Privacy Policy</a> 
+					<span class="separator">~
+					<a href="#" class="policy-link">Refund Policy</a>
+				  </p>
+				</div>
+			 </footer>
+			
+	</main>	
+
+	<!--Linking Swiper JS-->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+	<!--Linking custom script-->
+	<script src="script.js"></script>
+</body>			
+</html>
